@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공공도서관</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+    <header class="sub-header">
+        <div class="container header-inner">
+            <a href="main.html" class="logo">
+                <img src="Image/logo.png" alt="로고" class="logo-img">
+            </a>
+
+            <ul class="gnb-area">
+                <li><a>검색 · 발견</a></li>
+                <li class="active"><a>도서관 찾기</a></li>
+                <li><a>도서관 서비스</a></li>
+                <li><a>도서관 정보</a></li>
+            </ul>
+
+            <div class="util-menu">
+                <a>로그인</a>
+                <span class="divider"></span>
+                <a>회원가입</a>
+                <span class="divider"></span>
+                <a class="mypage-icon" title="마이페이지">
+                <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="mega-dropdown">
+            <div class="dropdown-inner">
+                <div class="dropdown-grid">
+                    <ul class="depth2-ul">
+                        <li><a>간략검색</a></li>
+                        <li><a>상세검색</a></li>
+                        <li><a>신착도서검색</a></li>
+                        <li><a>주제별검색</a></li>
+                        <li><a>희망도서신청</a></li>
+                        <li><a>책단비검색</a></li>
+                        <li><a>교과연계도서</a></li>
+                        <li><a>연속간행물</a></li>
+                    </ul>
+
+                    <ul class="depth2-ul">
+                        <li><a href="library.html">공공도서관</a></li>
+                        <li><a>공립작은도서관</a></li>
+                        <li><a>사립작은도서관</a></li>
+                    </ul>
+
+                    <ul class="depth2-ul">
+                        <li><a>책단비</a></li>
+                        <li><a>책이음</a></li>
+                        <li><a>전자콘텐츠</a></li>
+                        <li><a>모바일서비스</a></li>
+                        <li><a>임산부택배 서비스</a></li>
+                        <li><a href="movie.html">영화상영</a></li>
+                        <li><a>북 다이제스트</a></li>
+                        <li><a>디지털좌석예약</a></li>
+                    </ul>
+
+                    <ul class="depth2-ul">
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li><a>채용공고</a></li>
+                        <li><a>신착자료</a></li>
+                        <li><a>은평News</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="lnb-wrapper">
+        <div class="container">
+            <ul class="lnb-list">
+                <li class="active"><a href="library.html">공공도서관</a></li>
+                <li><a>공립작은도서관</a></li>
+                <li><a>사립작은도서관</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container sub-content">
+        <div class="page-title-area" style="text-align: center;">
+            <h2><img src="Image/book-stack.png" alt="도서관">공공도서관</h2>
+            <p>은평구공공도서관의 위치를 알려드립니다.</p>
+        </div>
+
+        <section class="map-section">
+            <div class="map-left">
+                <img src="Image/map01.png" alt="상세지도">
+                <div class="library-detail-info">
+    <h3>은평구립도서관</h3>
+    <p class="info-address"><i class="fa-solid fa-location-dot"></i> 서울특별시 은평구 통일로78가길 13-84</p>
+    <p class="info-tel"><i class="fa-solid fa-phone"></i> 02-385-1671</p>
+    <p class="info-closed"><i class="fa-solid fa-calendar-days"></i> 매주 월요일/일요일을 제외한 법정 공휴일, 기타 도서관 사정에 의한 임시휴관일</p>
+    
+    <p class="info-homepage">
+        <i class="fa-solid fa-house"></i> 
+        <a href="https://www.eplib.or.kr" target="_blank">https://www.eplib.or.kr</a>
+    </p>
+</div>
+            </div>
+
+            <div class="map-right">
+                <div class="interactive-map">
+                    <img src="Image/maaap.png" alt="은평구 지도" class="base-map">
+                    <div class="map-pin" style="top: 45%; left: 67%;" 
+
+                    data-image="Image/map01.png" 
+                    data-name="은평구립도서관" 
+                    data-address="서울특별시 은평구 통일로78가길 13-84" 
+                    data-tel="02-385-1671"
+                    data-closed="매주 월요일/일요일을 제외한 법정 공휴일, 기타 도서관 사정에 의한 임시휴관일"
+                    data-homepage="https://www.eplib.or.kr">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="pin-tooltip">은평구립도서관</span>
+                    </div>
+
+                    <div class="map-pin" style="top: 92%; left: 30%;" 
+                    data-image="Image/map02.png" 
+                    data-name="구립증산정보도서관" 
+                    data-address="서울특별시 은평구 증산로5길 6" 
+                    data-tel="02-307-6030"
+                    data-closed="매주 금요일, 법정공휴일 및 국경일, 장서점검 및 관장이 필요하다고 인정하는 날"
+                    data-homepage="http://www.jsplib.or.kr">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="pin-tooltip">구립증산정보도서관</span>
+                    </div>
+
+
+                    <div class="map-pin" style="top: 77%; left: 52%;" 
+                    data-image="Image/map03.png" 
+                    data-name="구립응암정보도서관" 
+                    data-address="서울특별시 은평구 가좌로 179 성지빌딩 2~3층" 
+                    data-tel="02-308-2320"
+                    data-closed="매주 금요일, 법정공휴일 및 국경일, 장서점검 및 관장이 필요하다고 인정하는 날"
+                    data-homepage="https://www.ealib.or.kr/">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="pin-tooltip">구립응암정보도서관</span>
+                    </div>
+
+
+                    <div class="map-pin" style="top: 24%; left: 80%;" 
+                    data-image="Image/map04.png" 
+                    data-name="은평뉴타운도서관" 
+                    data-address="서울특별시 은평구 진관2로 111-51" 
+                    data-tel="02-6341-6400"
+                    data-closed="매주 금요일, 법정공휴일"
+                    data-homepage="https://www.enlib.or.kr/">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="pin-tooltip">은평뉴타운도서관</span>
+                    </div>
+
+                    <div class="map-pin" style="top: 58%; left: 38%;" 
+                    data-image="Image/map05.png" 
+                    data-name="구립구산동도서관마을" 
+                    data-address="서울특별시 은평구 연서로 13길 29-23" 
+                    data-tel="02-357-0100"
+                    data-closed="매주 월요일, 법정공휴일"
+                    data-homepage="https://www.gsvlib.or.kr/">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="pin-tooltip">구립구산동도서관마을</span>
+                    </div>
+
+                    <div class="map-pin" style="top: 63%; left: 28%;" 
+                    data-image="Image/map06.png" 
+                    data-name="내를건너서숲으로도서관" 
+                    data-address="서울특별시 은평구 증산로 17길 50" 
+                    data-tel="02-307-6701"
+                    data-closed="매주 월요일, 법정공휴일"
+                    data-homepage="https://www.nslib.or.kr/">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="pin-tooltip">내를건너서숲으로도서관</span>
+                    </div>
+
+                    <div class="map-pin" style="top: 30%; left: 50%;" 
+                    data-image="Image/map07.png" 
+                    data-name="은뜨락도서관" 
+                    data-address="서울특별시 은평구 통일로 972" 
+                    data-tel="02-389-7635"
+                    data-closed="매주 월요일, 장서점검 및 관장이 필요하다고 인정하는 날,
+                    기타 도서관 사정에 의한 임시 휴관일"
+                    data-homepage="https://www.edlib.or.kr/">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="pin-tooltip">은뜨락도서관</span>
+                    </div>
+
+                    <div class="map-pin" style="top: 16%; left: 68%;" 
+                    data-image="Image/map08.png" 
+                    data-name="구립상림도서관" 
+                    data-address="서울특별시 은평구 진관4로 48-25 은평뉴타운상림마을" 
+                    data-tel="02-383-7557"
+                    data-closed="매주 월요일, 법정공휴일, 기타 도서관 사정에 의한 임시 휴관일"
+                    data-homepage="https://lib.eplib.or.kr/small_lib/sl06.asp">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="pin-tooltip">구립상림도서관</span>
+                    </div>
+                </div>
+            </div>
+        </section>  
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-links">
+                <span class="footer-text">개인정보처리방침</span>
+                <span class="footer-text">이메일 수신거부</span>
+                <span class="footer-text">전화번호부</span>
+            </div>
+            <div class="designed-by">
+                Designed by hyemi Lee
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const gnb = document.querySelector('.gnb-area');
+        const dropdown = document.querySelector('.mega-dropdown');
+        let hideTimeout; 
+
+        function showMenu() {
+            clearTimeout(hideTimeout);
+            dropdown.style.display = 'block';
+        }
+
+        function hideMenu() {
+            hideTimeout = setTimeout(() => {
+                dropdown.style.display = 'none';
+            }, 100);
+        }
+
+        gnb.addEventListener('mouseenter', showMenu);
+        gnb.addEventListener('mouseleave', hideMenu);
+
+        dropdown.addEventListener('mouseenter', showMenu);
+        dropdown.addEventListener('mouseleave', hideMenu);
+        
+ 
+        const pins = document.querySelectorAll('.map-pin');
+        const targetImage = document.querySelector('.map-left > img');
+        const infoTitle = document.querySelector('.library-detail-info h3');
+        const infoAddress = document.querySelector('.info-address'); 
+        const infoTel = document.querySelector('.info-tel');
+        const infoClosed = document.querySelector('.info-closed');
+        const infoHomepage = document.querySelector('.info-homepage');
+
+        pins.forEach(pin => {
+            pin.addEventListener('click', function() {
+                const newImg = this.getAttribute('data-image');
+                const newName = this.getAttribute('data-name');
+                const newAddress = this.getAttribute('data-address');
+                const newTel = this.getAttribute('data-tel');
+                const newClosed = this.getAttribute('data-closed');
+                const newHomepage = this.getAttribute('data-homepage');
+            
+                if(newImg && targetImage) targetImage.src = newImg;
+                if(newName && infoTitle) infoTitle.textContent = newName;
+            
+                if(newAddress && infoAddress) {
+                    infoAddress.innerHTML = `<i class="fa-solid fa-location-dot"></i> ${newAddress}`;
+                }
+                if(newTel && infoTel) {
+                    infoTel.innerHTML = `<i class="fa-solid fa-phone"></i> ${newTel}`;
+                }   
+                if(newClosed && infoClosed) {
+                    infoClosed.innerHTML = `<i class="fa-solid fa-calendar-days"></i> ${newClosed}`;
+                }
+                if(newHomepage && infoHomepage) {
+                    infoHomepage.innerHTML = `<i class="fa-solid fa-house"></i> <a href="${newHomepage}" target="_blank">${newHomepage}</a>`;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

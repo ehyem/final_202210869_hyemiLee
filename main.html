@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>은평구공공도서관</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="main.html" class="logo">
+                <img src="Image/logo.png" alt="로고" class="logo-img">
+            </a>
+
+            <ul class="gnb-area">
+                <li><a>검색 · 발견</a></li>
+                <li><a>도서관 찾기</a></li>
+                <li><a>도서관 서비스</a></li>
+                <li><a>도서관 정보</a></li>
+            </ul>
+
+            <div class="util-menu">
+                <a>로그인</a>
+                <span class="divider"></span>
+                <a>회원가입</a>
+                <span class="divider"></span>
+                <a class="mypage-icon" title="마이페이지">
+                <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="mega-dropdown">
+            <div class="dropdown-inner">
+                <div class="dropdown-grid">
+                    <ul class="depth2-ul">
+                        <li><a>간략검색</a></li>
+                        <li><a>상세검색</a></li>
+                        <li><a>신착도서검색</a></li>
+                        <li><a>주제별검색</a></li>
+                        <li><a>희망도서신청</a></li>
+                        <li><a>책단비검색</a></li>
+                        <li><a>교과연계도서</a></li>
+                        <li><a>연속간행물</a></li>
+                    </ul>
+
+                    <ul class="depth2-ul">
+                        <li><a href="library.html">공공도서관</a></li>
+                        <li><a>공립작은도서관</a></li>
+                        <li><a>사립작은도서관</a></li>
+                    </ul>
+
+                    <ul class="depth2-ul">
+                        <li><a>책단비</a></li>
+                        <li><a>책이음</a></li>
+                        <li><a>전자콘텐츠</a></li>
+                        <li><a>모바일서비스</a></li>
+                        <li><a>임산부택배 서비스</a></li>
+                        <li><a href="movie.html">영화상영</a></li>
+                        <li><a>북 다이제스트</a></li>
+                        <li><a>디지털좌석예약</a></li>
+                    </ul>
+
+                    <ul class="depth2-ul">
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li><a>채용공고</a></li>
+                        <li><a>신착자료</a></li>
+                        <li><a>은평News</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <img src="Image/banner.png" alt="메인배너" class="hero-bg-img">
+        <div class="container hero-content">
+
+
+            <h2 class="hero-title">
+                <b class="ani-text delay-1">책</b>과 
+                <b class="ani-text delay-2">사람</b> 그리고 
+                <b class="ani-text delay-3">세상</b>이 만나는 곳 
+                <span class="ani-text delay-4">은평구공공도서관</span>
+            </h2>
+
+            <div class="search-bar">
+                <input type="text" placeholder="도서를 검색해주세요">
+                <img src="Image/search.png" alt="검색" class="search-icon-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-links">
+        <div class="container">
+            <div class="link-grid">
+                <a href="https://www.eplib.or.kr" class="lib-btn" target="_blank">은평구립도서관</a>
+                <a href="https://www.jsplib.or.kr/" class="lib-btn" target="_blank">구립증산정보도서관</a>
+                <a href="https://www.ealib.or.kr/" class="lib-btn" target="_blank">구립응암정보도서관</a>
+                <a href="https://www.enlib.or.kr/" class="lib-btn" target="_blank">은평뉴타운도서관</a>
+                <a href="https://www.gsvlib.or.kr/" class="lib-btn" target="_blank">구립구산동도서관마을</a>
+                <a href="https://www.nslib.or.kr/" class="lib-btn" target="_blank">내를건너서숲으로도서관</a>
+                <a href="https://www.edlib.or.kr/" class="lib-btn" target="_blank">은뜨락도서관</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container main-content">
+        <section class="board-section">
+            <div class="board-header">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" onclick="openTab('notice', this)">공지사항</button>
+                    <button class="tab-btn" onclick="openTab('job', this)">채용공고</button>
+                    <button class="tab-btn" onclick="openTab('new', this)">신착자료</button>
+                </div>
+
+                <div class="more-btn-link" title="더보기" style="cursor: pointer;">
+                    <i class="fa-solid fa-plus" style="font-size: 20px; color: #081059;"></i> 
+                </div>
+            </div>
+
+            <div id="notice" class="tab-content active">
+                <ul class="board-list">
+                    <li>
+                        <div class="list-left">
+                            <span class="badge">은뜨락</span>
+                            <span class="title-text">은뜨락도서관 개관 6주년 기념 페스티벌</span>
+                        </div>
+                        <span class="date">2025.11.26</span>
+                    </li>
+                    <li>
+                        <div class="list-left">
+                            <span class="badge">응암</span>
+                            <span class="title-text">응암정보도서관 11월 독서문화프로그램 안내</span>
+                        </div>
+                        <span class="date">2025.11.23</span>
+                    </li>
+                     <li>
+                        <div class="list-left">
+                            <span class="badge">은평</span>
+                            <span class="title-text">[디지털자료코너] AI 활용 추천 도서와 함께하는..</span>
+                        </div>
+                        <span class="date">2025.11.21</span>
+                    </li>
+                    <li>
+                        <div class="list-left">
+                            <span class="badge">증산</span>
+                            <span class="title-text">책 따라 걷는 도서관 - 11월 온라인 원화 전시 &lt;그레..</span>
+                        </div>
+                        <span class="date">2025.11.19</span>
+                    </li>
+                    <li>
+                        <div class="list-left">
+                            <span class="badge">상림</span>
+                            <span class="title-text">11월 독서는 힙하다 "아주 사적인 도서관" 참여자..</span>
+                        </div>
+                        <span class="date">2025.11.18</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="job" class="tab-content">
+                <ul class="board-list">
+                    <li>
+                        <div class="list-left">
+                            <span class="badge">내숲</span>
+                            <span class="title-text">내를 건너서 숲으로 도서관 개관연장사서 공개 채용..</span>
+                        </div>
+                        <span class="date">2025.11.15</span>
+                    </li>
+                    <li>
+                        <div class="list-left">
+                            <span class="badge">증산</span>
+                            <span class="title-text">2025년 사서 서류전형 합격자 공고</span>
+                        </div>
+                        <span class="date">2025.11.11</span>
+                    </li>
+                    <li>
+                        <div class="list-left">
+                            <span class="badge">내숲</span>
+                            <span class="title-text">내를 건너서 숲으로 도서관 정규직 및 계약직 사서 최..</span>
+                        </div>
+                        <span class="date">2025.11.01</span>
+                    </li>
+                    <li>
+                        <div class="list-left">
+                            <span class="badge">은뜨락</span>
+                            <span class="title-text">기간제 직원 채용 최종합격자 발표</span>
+                        </div>
+                        <span class="date">2025.10.30</span>
+                    </li>
+                    <li>
+                        <div class="list-left">
+                            <span class="badge">은뜨락</span>
+                            <span class="title-text">기간제 직원 서류전형심사 합격자 및 면접심사 공고</span>
+                        </div>
+                        <span class="date">2025.09.11</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="new" class="tab-content">
+                <ul class="board-list">
+                    <li>
+                        <div class="list-left">
+                            <span class="badge">은평</span>
+                            <span class="title-text">2025년 11월 불광역 은평스마트도서관 신착 도서..</span>
+                        </div>
+                        <span class="date">2025.11.21</span>
+                    </li>
+                    <li>
+                        <div class="list-left">
+                            <span class="badge">구산</span>
+                            <span class="title-text">2025년 40차 신착자료 비치 안내</span>
+                        </div>
+                        <span class="date">2025.11.21</span>
+                    </li>
+                    <li>
+                        <div class="list-left">
+                            <span class="badge">은평</span>
+                            <span class="title-text">2025년 제 36차 희망도서, 신착도서 비치안내</span>
+                        </div>
+                        <span class="date">2025.11.18</span>
+                    </li>
+                    <li>
+                        <div class="list-left">
+                            <span class="badge">뉴타운</span>
+                            <span class="title-text">2025년 11월 1주차 신착 자료 목록</span>
+                        </div>
+                        <span class="date">2025.11.17</span>
+                    </li>
+                    <li>
+                        <div class="list-left">
+                            <span class="badge">구산</span>
+                            <span class="title-text">2025년 39차 신착자료 비치 안내</span>
+                        </div>
+                        <span class="date">2025.11.15</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="slider-section">
+            <div class="slider-header">
+                <h3 class="slider-title">알림</h3>
+                <div class="slider-dots">
+                    <div class="dot active" onclick="currentSlide(1)"></div>
+                    <div class="dot" onclick="currentSlide(2)"></div>
+                    <div class="dot" onclick="currentSlide(3)"></div>
+                    <div class="dot" onclick="currentSlide(4)"></div>
+                    <div class="dot" onclick="currentSlide(5)"></div>
+                    <div class="dot" onclick="currentSlide(6)"></div>
+                </div>
+            </div>
+
+            <div class="slider-view">
+                <img src="Image/notice01.jpg" alt="알림1" class="slide-img active">
+                <img src="Image/notice02.jpg" alt="알림2" class="slide-img">
+                <img src="Image/notice03.jpg" alt="알림3" class="slide-img">
+                <img src="Image/notice04.jpg" alt="알림4" class="slide-img">
+                <img src="Image/notice05.jpg" alt="알림5" class="slide-img">
+                <img src="Image/notice06.jpg" alt="알림6" class="slide-img">
+            </div>
+        </section>
+    </div>
+
+    <section class="bottom-icons">
+        <div class="container icon-container">
+            <div class="icon-item">
+
+                <div class="icon-img-box">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <div class="icon-text">
+                    <h3>전자책</h3>
+                    <p>PC, 스마트기기에서<br>열람 할 수 있는 서비스</p>
+                </div>
+            </div>
+
+            <div class="icon-item">
+                <div class="icon-img-box">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div class="icon-text">
+                    <h3>책이음</h3>
+                    <p>전국의 책이음 서비스에 가입된<br>공공도서관 도서 대출 서비스</p>
+                </div>
+            </div>
+
+            <div class="icon-item">
+                <div class="icon-img-box">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <div class="icon-text">
+                    <h3>책단비</h3>
+                    <p>버스정류장이나<br>지하철역에서 대출/반납</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-links">
+                <span class="footer-text">개인정보처리방침</span>
+                <span class="footer-text">이메일 수신거부</span>
+                <span class="footer-text">전화번호부</span>
+            </div>
+            <div class="designed-by">
+                Designed by hyemi Lee
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const gnb = document.querySelector('.gnb-area');
+        const dropdown = document.querySelector('.mega-dropdown');
+        let hideTimeout; 
+
+        function showMenu() {
+            clearTimeout(hideTimeout);
+            dropdown.style.display = 'block';
+        }
+
+        function hideMenu() {
+            hideTimeout = setTimeout(() => {
+                dropdown.style.display = 'none';
+            }, 100);
+        }
+
+
+        gnb.addEventListener('mouseenter', showMenu);
+        gnb.addEventListener('mouseleave', hideMenu);
+
+
+        dropdown.addEventListener('mouseenter', showMenu);
+        dropdown.addEventListener('mouseleave', hideMenu);
+
+
+
+        function openTab(tabName, btnElement) {
+            var contents = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].classList.remove("active");
+            }
+            var buttons = document.getElementsByClassName("tab-btn");
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            btnElement.classList.add("active");
+        }
+
+ 
+        let slideIndex = 1;
+        let slideTimer;
+
+        document.addEventListener("DOMContentLoaded", () => {
+            showSlides(slideIndex);
+            slideTimer = setInterval(function() {
+                slideIndex++;
+                showSlides(slideIndex);
+            }, 5000);
+        });
+
+        function currentSlide(n) {
+            clearInterval(slideTimer);
+            slideIndex = n;
+            showSlides(slideIndex);
+            slideTimer = setInterval(function() {
+                slideIndex++;
+                showSlides(slideIndex);
+            }, 5000);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide-img"); 
+            let dots = document.getElementsByClassName("dot");
+
+            if(slides.length === 0) return; 
+
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                slides[i].classList.remove("active"); 
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex-1].style.display = "block"; 
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+</body>
+</html>
